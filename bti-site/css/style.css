@@ -97,7 +97,7 @@ nav a.active {
 }
 
 .hero {
-  min-height: 590px;
+  min-height: 600px;
   position: relative;
   display: flex;
   align-items: center;
@@ -168,9 +168,9 @@ h2 em {
 }
 
 .intro {
-  padding: 26px 0 18px;
+  padding: 50px 0 18px;
   text-align: center;
-  border-bottom: 1px solid var(--line)
+  /* border-bottom: 1px solid var(--line) */
 }
 
 .intro h2 {
@@ -192,13 +192,18 @@ h2 em {
 .triple {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-bottom: 1px solid var(--line);
+  /* border-bottom: 1px solid var(--red); */
   column-gap: 20px;
+
+  /* background-color: var(--red); */
 }
 
 .tile {
   background: #0c0e11;
-  border-right: 1px solid var(--line)
+  margin-bottom: 20px;
+    border-radius: 16px;
+  overflow: hidden;
+  /* border-right: 1px solid var(--red) */
 }
 
 .tile:last-child {
@@ -212,9 +217,10 @@ h2 em {
 }
 .imgbox img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-width: 100%;
   object-fit: cover;
-  object-position: center
+  object-position: top center;
 }
 
 .tile .imgbox {
@@ -274,7 +280,6 @@ h2 em {
 }
 
 .section-title {
-  display: flex;
   justify-content: space-between;
   align-items: end;
   gap: 30px;
@@ -302,7 +307,7 @@ h2 em {
   min-height: 190px;
   padding: 20px;
   background: linear-gradient(145deg, #14171b, #0c0e11);
-  border: 1px solid var(--line)
+  /* border: 1px solid var(--line) */
 }
 
 .card.mental {
@@ -549,6 +554,21 @@ footer {
 
   .nav>.btn {
     display: none
+  }
+  .triple{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .imgbox {
+    height: auto;
+    max-height: 400px;
+  }
+  .imgbox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top center;
   }
 
   .triple,
@@ -1314,6 +1334,7 @@ footer {
   transform: rotate(180deg)
 }
 
+
 .teaching-coaching-body {
   padding: 4px 0 18px
 }
@@ -1329,6 +1350,55 @@ footer {
   margin-top: 20px
 }
 
+
+/* WHAT PLAYERS AND FAMILIES SAY UNDER TO ANALIZE IT */
+.analyzing-testimonials-details {
+  margin-top: 18px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line)
+}
+
+.analyzing-testimonials-summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.3px
+}
+
+.analyzing-testimonials-summary::-webkit-details-marker {
+  display: none
+}
+
+.analyzing-testimonials-arrow {
+  transition: transform .2s ease
+}
+
+.analyzing-testimonials-details[open] .analyzing-testimonials-arrow {
+  transform: rotate(180deg)
+}
+
+
+.analyzing-testimonials-body {
+  padding: 4px 0 18px
+}
+
+.analyzing-testimonials-body p {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #a3abb3;
+  margin: 0 0 12px
+}
+
+.analyzing-testimonials-body .about-stats {
+  margin-top: 20px
+}
 
 
 /* ABOUT SUMMARY — wider text with action below */
