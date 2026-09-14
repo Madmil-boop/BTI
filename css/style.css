@@ -687,7 +687,7 @@ footer {
 }
 
 .service-title small {
-  font-size: 13px;
+  font-size: 20px;
   color: #9fa5ad;
   font-weight: 400
 }
@@ -789,15 +789,30 @@ footer {
   background: linear-gradient(145deg, #14171b, #0c0e11);
   overflow: hidden
 }
-
+.addon-detail {
+  border: 1px solid var(--line);
+  background: linear-gradient(145deg, #14171b, #0c0e11);
+  overflow: hidden
+}
 .service-detail.mental {
   border-color: #7c2228
 }
-
+.addon-detail.mental {
+  border-color: #7c2228
+}
 .service-detail summary {
   list-style: none;
   cursor: pointer;
   min-height: 88px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 15px 24px
+}
+.addon-detail summary {
+  list-style: none;
+  cursor: pointer;
+  min-height: 60px;
   display: flex;
   align-items: center;
   gap: 18px;
@@ -807,11 +822,15 @@ footer {
 .service-detail summary::-webkit-details-marker {
   display: none
 }
-
+.addon-detail summary::-webkit-details-marker {
+  display: none
+}
 .service-detail summary:hover {
   background: rgba(255, 255, 255, .025)
 }
-
+.addon-detail summary:hover {
+  background: rgba(255, 255, 255, .025)
+}
 .service-icon {
   color: var(--red);
   font-size: 29px;
@@ -831,9 +850,15 @@ footer {
 }
 
 .service-title small {
-  font-size: 13px;
+  font-size: 20px;
   color: #9fa5ad;
   font-weight: 400
+}
+.service-price {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 800;
+  letter-spacing: .3px
 }
 
 .service-chevron {
@@ -905,6 +930,7 @@ footer {
   stroke-linecap: round;
   stroke-linejoin: round
 }
+
 
 
 .visual-story {
