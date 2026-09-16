@@ -104,6 +104,19 @@ nav a.active {
   overflow: hidden
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(5, 6, 7, .8);
+  max-width: 720px;
+  margin: auto;
+  padding: 24px 0px;
+}
+
+
 .hero>img {
   position: absolute;
   inset: 0;
@@ -883,6 +896,16 @@ footer {
 .service-content {
   padding: 8px 80px 32px;
   border-top: 1px solid var(--line)
+}
+.service-content .sideways {
+  display: flex;
+  /* border-top: 1px solid var(--line) */
+}
+.sideways p {
+  padding-right: 50px;
+  color: #b1b6bc;
+  line-height: 1.65;
+  font-size: 14px
 }
 
 .service-content h3 {
