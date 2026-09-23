@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+    <div class="nav"><a aria-label="BTI" class="brand" href="index.html"><img alt="BTI logo"
+          src="images/image-1.png" /></a>
+      <nav id="primary-nav"><a href="index.html">Home</a><a href="index.html#about">About</a><a
+          href="Services.html">Services</a><a href="Services.html#contact">Contact</a><a href="Checkout.html">Checkout</a></nav><button
+        aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu" class="nav-toggle" id="nav-toggle"
+        type="button"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+<div class="checkout-container">
+    <h2>Order Summary</h2>
+    
+    <!-- Dynamic Cart Content Injected Here -->
+    <div id="cart-summary"></div>
+    
+    <div class="total-section">
+        <span>Total:</span>
+        <span id="cart-total">\$0.00</span>
+    </div>
+
+    <!-- Container for the dynamic PayPal Button -->
+    <div id="paypal-button-container"></div>
+    <div id="error-box" class="error-message"></div>
+</div>
+
+
+</body>
+</html>

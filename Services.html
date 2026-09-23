@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   <title>BTI Services</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -13,8 +15,8 @@
     <div class="nav"><a aria-label="BTI" class="brand" href="index.html"><img alt="BTI logo"
           src="images/image-1.png" /></a>
       <nav id="primary-nav"><a href="index.html">Home</a><a href="index.html#about">About</a><a
-          href="Services.html">Services</a><a href="index.html#process">Process</a><a
-          href="index.html#contact">Contact</a></nav><button aria-controls="primary-nav" aria-expanded="false"
+          href="Services.html">Services</a><a href="Services.html#contact">Contact</a><a
+          href="Checkout.html">Checkout</a></nav><button aria-controls="primary-nav" aria-expanded="false"
         aria-label="Open menu" class="nav-toggle" id="nav-toggle"
         type="button"><span></span><span></span><span></span></button>
     </div>
@@ -38,7 +40,6 @@
         <div class="section-title">
           <div>
             <p class="eyebrow">SERVICES</p>
-            <h2>TAILORED. ACTIONABLE. IMPACTFUL.</h2>
           </div>
           <p style="color:#a5abb1;max-width:470px;line-height:1.6;margin:0">
             Open any service to see the full description.
@@ -84,7 +85,10 @@
                     <li>45–60 min 1-on-1 video meeting</li>
                     <li>Individual focus points</li>
                   </ul>
-                  <a class="price-action" href="#contact">Get Started</a>
+                  <!-- <a class="price-action" href="Checkout.html">Get Started</a> -->
+                  <button class="price-action" data-name="Basic Video Analysis" data-price="29.99">
+                    Proceed to Checkout
+                  </button>
                 </div>
                 <div class="price-card">
                   <h4>3-Analysis Development</h4>
@@ -96,7 +100,10 @@
                     <li>Updated focus points</li>
                     <li>Save $48</li>
                   </ul>
-                  <a class="price-action" href="#contact">Get Started</a>
+                  <!-- <a class="price-action" href="#contact">Get Started</a> -->
+                  <button class="price-action" data-name="3-Analysis Development" data-price="249">
+                    Proceed to Checkout
+                  </button>
                 </div>
                 <div class="price-card popular">
                   <span class="price-badge">MOST POPULAR</span>
@@ -110,7 +117,10 @@
                     <li>BTI Focus Plan included</li>
                     <li>Save $96</li>
                   </ul>
-                  <a class="price-action" href="#contact">Get Started</a>
+                  <!-- <a class="price-action" href="#contact">Get Started</a> -->
+                  <button class="price-action" data-name="5-Analysis Development" data-price="399">
+                    Proceed to Checkout
+                  </button>
                 </div>
               </div>
               <p>The goal is not simply to show you what happened, but to help you understand why it happened, what you
@@ -262,23 +272,26 @@
                     d="M14 39c0-8 4-13 10-13s10 5 10 13M3 39c0-7 3-11 8-11 3 0 5 1 7 4M45 39c0-7-3-11-8-11-3 0-5 1-7 4">
                   </path>
                 </svg></span>
-              <span class="service-title"><b>BTI TEAM VIDEO</b><small>Review. Understand. Prepare.</small></span>
+              <span class="service-title"><b>TEAM ANALYSIS</b><small>Review. Understand. Prepare.</small></span>
+              <span class="service-price">$99+</span>
               <span class="service-chevron">＋</span>
             </summary>
             <div class="service-content">
-              <h3>BTI TEAM VIDEO — REVIEW. UNDERSTAND. PREPARE.</h3>
+              <h3>TEAM ANALYSIS — REVIEW. UNDERSTAND. PREPARE.</h3>
               <div class="sideways">
                 <p>Professional post-game video review designed around your team’s playing system, tactical principles
                   and
                   coaching philosophy.
-                <br>Each game is analyzed from a team perspective, focusing on how effectively the players execute the
+                  <br>Each game is analyzed from a team perspective, focusing on how effectively the players execute the
                   structure and tactical concepts established by the coaching staff.</br>
-                <br >Key situations are selected and organized into a clear, structured video review that can be used by
+                  <br>Key situations are selected and organized into a clear, structured video review that can be used
+                  by
                   coaches for team meetings, post-game feedback and preparation for the next game or practice.</br>
-                <br>The analysis can be tailored to the areas that matter most to your team — from 5-on-5 structure,
+                  <br>The analysis can be tailored to the areas that matter most to your team — from 5-on-5 structure,
                   forecheck and breakouts to zone entries, defensive-zone coverage and special teams.</br>
-                <br >The goal is to turn game footage into clear, relevant teaching material that supports the coaching
-                  staff and helps the team learn from every game.</br></p>
+                  <br>The goal is to turn game footage into clear, relevant teaching material that supports the coaching
+                  staff and helps the team learn from every game.</br>
+                </p>
                 <div class="price-note">Custom Team Pricing<br />Pricing is tailored to your team’s schedule, workflow
                   and
                   analysis needs.<br /><a class="price-action" href="#contact">Contact for Team Pricing</a></div>
@@ -338,7 +351,6 @@
         <div class="section-title">
           <div>
             <p class="eyebrow">ADD-ONS</p>
-            <h2>TAILORED. ACTIONABLE. IMPACTFUL.</h2>
           </div>
           <p style="color:#a5abb1;max-width:470px;line-height:1.6;margin:0">
             Open any add-on to see the full description.
@@ -355,21 +367,33 @@
                   <path d="M13 31c8-7 14-3 22-8"></path>
                   <path d="M31 27l4-4-5-2"></path>
                 </svg></span>
-              <span class="service-title"><b>BTI FOCUS PLAN</b></span>
+              <span class="service-title"><b>FOCUS PLAN</b></span>
+              <span class="service-price">$39</span>
               <span class="service-chevron">＋</span>
             </summary>
             <div class="service-content">
-              <h3>BTI FOCUS PLAN — TURN INSIGHT INTO ACTION</h3>
-              <p>Video analysis does not have to end when the video ends.</p>
-              <p>Based on the focus points we identify together, BTI can create personalized on-ice drills designed
-                around the specific areas of your game you want to improve.</p>
-              <p>The purpose is to connect what we see on video with what you can actually work on in practice — turning
-                analysis into a clear, practical development plan.</p>
-              <p>Your game. Your focus. Your work.</p>
-              <div class="price-note">BTI Focus Plan — $39<br />2–4 personalized, targeted on-ice exercises based on the
-                development areas identified in your analysis.<br /><span style="color:#9299a0">Included with the
-                  5-Analysis Development Package.</span><br /><a class="price-action" href="#contact">Add a Focus
-                  Plan</a></div>
+
+              <h3>FOCUS PLAN — TURN INSIGHT INTO ACTION</h3>
+              <div class="sideways">
+                <p>Video analysis does not have to end when the video ends.
+                  <br>Based on the focus points we identify together, BTI can create personalized on-ice drills designed
+                  around the specific areas of your game you want to improve.</br>
+                  <br>The purpose is to connect what we see on video with what you can actually work on in practice —
+                  turning
+                  analysis into a clear, practical development plan.</br>
+                  <br>Your game. Your focus. Your work.</br>
+                </p>
+                <div class="price-card-addon">
+                  <h4>Focus Plan</h4>
+                  <div class="price">$39</div>
+                  <small>Included with the
+                    5-Analysis Development Package</small>
+                  <p>2–4 personalized, targeted on-ice exercises based on
+                    the
+                    development areas identified in your analysis</p>
+                  <a class="price-action" href="#contact">Get Started</a>
+                </div>
+              </div>
             </div>
           </details>
           <details class="addon-detail">
@@ -380,19 +404,26 @@
                   <path d="M15 7l-5 11M25 7l-5 11M35 7l-5 11"></path>
                 </svg></span>
               <span class="service-title"><b>SHIFT/CLIP EXTRACTION</b></span>
+              <span class="service-price">$50/Game</span>
               <span class="service-chevron">＋</span>
             </summary>
             <div class="service-content">
               <h3>SHIFT EXTRACTION — GET THE CLIPS YOU NEED</h3>
-              <p>BTI can extract the shifts you need from your game footage, saving you time and effort.</p>
-              <p>We can provide the shifts in a variety of formats, including individual clips, full-shift video files,
-                or a single video file with all shifts combined.</p>
-              <div class="price-note">Shift extraction is an additional cost<br />Please see add-ons for more
-                information.<br /><a class="price-action" href="#contact">Add Shift Extraction</a></div>
-            </div>
+              <div class="sideways">
+                <p>BTI can extract the shifts you need from your game footage, saving you time and effort. <br><br>
+                  We can provide the shifts in a variety of formats, including individual clips, full-shift video
+                  files,
+                  or a single video file with all shifts combined.</p>
+                <div class="price-card-addon">
+                  <h4>Shift Extraction</h4>
+                  <div class="price">$50/Game</div>
+                  <p>Send us the full game footage and we'll extract the shifts/clips for you.</p>
+                  <a class="price-action" href="#contact">Get Started</a>
+                </div>
+              </div>
 
+            </div>
         </div>
-      </div>
 
     </section>
     <section class="bti-contact-section" id="contact">
